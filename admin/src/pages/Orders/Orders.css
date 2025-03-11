@@ -1,0 +1,92 @@
+.orders-container {
+  max-width: 800px; /* Max width for the order list */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Padding around the container */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Dark text color */
+}
+
+.list-table-format {
+  display: grid; /* Use grid layout for orders */
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr; /* Define grid columns */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Space between grid items */
+  padding: 12px 15px; /* Padding inside each order row */
+  border: 1px solid #cacaca; /* Light border */
+  font-size: 13px; /* Font size for order details */
+}
+
+.list-table-format.title {
+  background-color: #f9f9f9; /* Light background for the title row */
+  font-weight: bold; /* Make title text bold */
+}
+
+.list-table-format img {
+  width: 50px; /* Image size for food items (if applicable) */
+}
+
+.order-card {
+  margin: 15px 0; /* Space between order cards */
+  padding: 15px; /* Padding inside each card */
+  border-radius: 5px; /* Slightly rounded corners */
+  background-color: #ffffff; /* White background for each order card */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.order-card h2 {
+  margin: 0; /* No margin for order ID */
+  font-size: 18px; /* Font size for order ID */
+  color: #007bff; /* Blue color for the order ID */
+}
+
+.order-card p {
+  margin: 5px 0; /* Space between paragraphs */
+  color: #555; /* Medium gray for text */
+  font-size: 14px; /* Font size for order details */
+}
+
+.order-card ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+}
+
+.order-card li {
+  margin: 5px 0; /* Space between items */
+  background-color: #f1f1f1; /* Light gray background for items */
+  padding: 5px; /* Padding inside each item */
+  border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .list-table-format {
+    grid-template-columns: 1fr 3fr 1fr; /* Adjust grid for smaller screens */
+    gap: 15px; /* Increase gap */
+  }
+  
+  .list-table-format.title {
+    display: none; /* Hide title on small screens */
+  }
+
+  .orders-container {
+    padding: 10px; /* Reduce padding for small screens */
+  }
+
+  .order-card {
+    padding: 10px; /* Reduce padding for order cards */
+  }
+
+  h1 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  .order-card h2 {
+    font-size: 16px; /* Adjust order ID size */
+  }
+}
