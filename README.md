@@ -1,5 +1,5 @@
 
-#LocalLeaf Web App
+# LocalLeaf Web App
 
 This is a full-stack web application where users can order food and make payments. The app includes an admin panel for managing items, add-to-cart functionalities, and user authentication using bcrypt and JWT.
 
